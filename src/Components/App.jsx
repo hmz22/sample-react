@@ -1,12 +1,11 @@
-function App() {
-  const runMe = (name) => {
-    alert("hello " + name);
-  };
+import Counter from "./Counter";
 
+function App() {
   return (
-    <div>
-      <div onClick={() => runMe}>Hello World</div>
-    </div>
+    <>
+      <h1>App</h1>
+      <Counter id={1} />
+    </>
   );
 }
 
